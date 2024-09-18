@@ -1,5 +1,3 @@
-Based on the code and its structure in the notebook, here's a README draft:
-
 ---
 
 # Diabetic Patient Readmission Analysis
@@ -29,9 +27,7 @@ The dataset used in this analysis is `diabetic_data.csv`. It contains informatio
 
 4. **Modeling**:
    - The dataset is split into training and test sets.
-   - Several machine learning algorithms are applied, such as:
-     - Logistic Regression
-     - Random Forest Classifier
+   - Logistic regression is carried out.
    - Model evaluation is performed using accuracy, precision, recall, and other relevant metrics.
 
 ## Libraries Used
@@ -54,9 +50,12 @@ The dataset used in this analysis is `diabetic_data.csv`. It contains informatio
    The code can be run cell by cell in Jupyter Notebook to reproduce the results.
 
 ## Future Improvements
+-Data Scaling: The models were developed using a small subset of the original data, with less than 150 instances for the basic model and slightly over 3000 instances for the improved model. Expanding the dataset to include more instances from the original data will enhance the models' robustness and improve performance metrics.
 
-- Hyperparameter tuning for improved model performance.
-- Analysis of additional features to improve readmission prediction accuracy.
-- Cross-validation for model robustness.
+-Clearer Training and Evaluation of Localized Models: The training and evaluation process for the localized models developed for each cluster requires further clarification. Future work should aim to provide a clearer comparison between localized models and a general model that uses the entire dataset.
+
+-Model Performance: Metrics such as precision, recall, and accuracy can be further improved by implementing hyperparameter tuning and using more advanced machine learning techniques such as ensemble methods or neural networks.
+
+-Cluster-Specific Models: A deeper analysis of the clusters, combined with a more thorough comparison of cluster-specific models to the general model, will provide insights into whether using localized models per cluster offers significant advantages.
 
 ---
